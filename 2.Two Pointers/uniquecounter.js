@@ -20,7 +20,7 @@ function sumUnique(array){
     // console.log(Object.keys(obj).length+"==>")
     for(let key in obj){
         store.push(parseInt(key))
-        console.log(key)
+        // console.log(key)
     }
     return store;
     console.log(store)
