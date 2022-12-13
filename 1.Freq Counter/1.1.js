@@ -27,4 +27,5 @@ function same(array1, array2) {
 
     return true;
 }
+
 console.log(same([1, 2, 3, 3], [1, 4, 9, 9]));
