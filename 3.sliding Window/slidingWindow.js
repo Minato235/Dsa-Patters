@@ -4,8 +4,8 @@ for(let i=0;i<num;i++){
     maxArray+=array[i]
 }
 tempArray=maxArray;
-for(let i=num;i<array.length;i++){
-    tempArray=tempArray-array[i-num]+array[i];
+for(let j=num;j<array.length;j++){
+    tempArray=tempArray-array[j-num]+array[j];
     maxArray=Math.max(tempArray,maxArray);
 }
 return maxArray;
