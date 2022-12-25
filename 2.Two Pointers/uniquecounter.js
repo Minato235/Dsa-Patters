@@ -26,7 +26,7 @@ function sumUnique(array){
     console.log(store)
 
 }
-console.log(sumUnique([1,1,2]));
-console.log(sumUnique([3,2,1,0,1,2,3]));
+// console.log(sumUnique([1,1,2]));
+// console.log(sumUnique([3,2,1,0,1,2,3]));
 
 
