@@ -18,11 +18,7 @@ function sumUnique(array){
     }
     console.log(obj)
     // console.log(Object.keys(obj).length+"==>")
-    for(let key in obj){
-        store.push(parseInt(key))
-        // console.log(key)
-    }
-    return store;
+ 
     console.log(store)
 
 }
@@ -30,3 +26,8 @@ function sumUnique(array){
 // console.log(sumUnique([3,2,1,0,1,2,3]));
 
 
+   for(let key in obj){
+        store.push(parseInt(key))
+        // console.log(key)
+    }
+    return store;

@@ -11,4 +11,16 @@ function naiveString(long,short){
     }
     return count;
 }
-console.log(naiveString("lorie loled","p"))
+// console.log(naiveString("lorie loled","p"))
+let array=[1,2,3,5],n=5;
+function MissingNumber(array,n){
+    let sum=0;
+    for(let i=0;i<=n;i++){
+        sum+=i;
+    }
+    for(let i=0;i<array.length;i++){
+        sum-=array[i];
+    }
+    return sum;
+}
+console.log(MissingNumber([1,2,3,5],5))
