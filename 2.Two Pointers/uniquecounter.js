@@ -12,22 +12,22 @@
 //frquensy counter using
 
 function sumUnique(array){
-    let obj={},store2=[],store=[];
+    var obj={},store2=[],store=[];
     for(const i of array){
         obj[i]=(obj[i]||0)+1;
     }
+    return obj
     console.log(obj)
-    // console.log(Object.keys(obj).length+"==>")
- 
-    console.log(store)
-
+//map
+let num=obj.map(x=>x.key)
+console.log(num)
 }
 // console.log(sumUnique([1,1,2]));
-// console.log(sumUnique([3,2,1,0,1,2,3]));
+console.log(sumUnique([3,2,1,0,1,2,3]));
 
 
-   for(let key in obj){
-        store.push(parseInt(key))
-        // console.log(key)
-    }
-    return store;
+//    for(let key in obj){
+//         store.push(parseInt(key))
+//         // console.log(key)
+//     }
+//     return store;
