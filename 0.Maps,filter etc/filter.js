@@ -1,9 +1,26 @@
-let studentRecords = [ {name: 'John', id: 123, marks : 98 },
-          {name: 'Baba', id: 101, marks : 23 },
-          {name: 'yaga', id: 200, marks : 45 },
-          {name: 'Wick', id: 115, marks : 75 } ] 
+function resolveAfter2Seconds() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(console.log("c"));
+      }, 2000);
+    });
+  }
+  function resolveAfter1Seconds() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(console.log("d"));
+      }, 0);
+    });
+  }
 
-let names=studentRecords.filter(student=>student.id);
-console.log(names)
-let name2=studentRecords.filter(student=>student.name.length>=3)
-console.log(name2)
+async function x1(){
+    console.log('a');
+
+    console.log('b');
+    let x=await resolveAfter2Seconds();
+    let y=await resolveAfter1Seconds();
+    // await setTimeout(() => console.log('c'), 1000)
+        
+    console.log('e');
+}
+x1();

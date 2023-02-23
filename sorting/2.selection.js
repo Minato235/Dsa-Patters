@@ -13,4 +13,4 @@ function selectionSort(arr) {
     return arr;
 
 }
-// console.log(selectionSort([2, 1, 3, 4]))
+console.log(selectionSort([2, 1, 3, 4]))

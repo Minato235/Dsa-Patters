@@ -1,7 +1,7 @@
 //forEach
 const array1 = ['a', 'b', 'c'];
 array1.forEach(ele=>{
-    // console.log(ele)
+    console.log(ele)
 })
 
 var arr = [3, 5, 7];
