@@ -1,3 +1,8 @@
+
+
+
+
+
 function Binarysearch(array,val){
     let min=0,max=array.length-1;
  while(min<=max){
