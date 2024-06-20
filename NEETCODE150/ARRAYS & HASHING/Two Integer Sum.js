@@ -10,7 +10,7 @@ class Solution {
         for (let i = 0; i < nums.length; i++) {
             const num = nums[i];
             const comp=target-num;
-            console.log(comp)
+            console.log(map)
             if(map.has(comp)){
                 return [map.get(comp),i]
             }
