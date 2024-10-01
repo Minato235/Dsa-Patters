@@ -76,13 +76,4 @@
 - Using Multiple AZs: Deploying resources in multiple AZs within a region increases fault tolerance. If one AZ experiences issues, the others can continue handling traffic.
 - Elastic Load Balancers (ELB): Distribute incoming traffic across multiple AZs, enhancing fault tolerance and performance.
 
- Example Scenario
-Imagine you're running a website serving customers across the United States. To ensure high availability, you choose the US-East-1 region (North Virginia), which has multiple AZs. Here's how to set it up:
-
-1. Launch Instances: Deploy two EC2 instances in different AZs within the US-East-1 region. This ensures that if one AZ goes down, your website remains online.
-2. Configure ELB: Set up an Elastic Load Balancer (ELB) to distribute traffic between both instances, improving performance and load balancing.
-3. Enable Auto Scaling: Automatically add more instances during high traffic periods (like Black Friday sales) and scale down during low traffic periods to save costs.
-4. Use CloudFront: Implement CloudFront (CDN) with Edge Locations across the US to cache static content, reducing latency for users in different states.
-
----
 
