@@ -35,3 +35,65 @@ When you write a Java program, the execution process involves several steps, che
 ## Summary
 
 - Write Java Code → **JDK Checks for Errors** → Compile Code → Send to **JRE** → Execute with **JVM**.
+
+# Day 2 Lesson: Java Program Execution Flow
+
+Here’s a version of Day 2 notes that you can use for a GitHub README or documentation file. This is structured in Markdown to look clean on GitHub.
+
+Day 2: Java Basics - Variables, Data Types, and Operators
+
+1. **Variables in Java**
+
+Definition: Variables are containers that hold data values in Java. There are three main types:
+
+    •	Local Variables: Defined within methods, accessible only within that method.
+    •	Instance Variables: Declared in a class, but outside any method. Each instance of the class has its own copy.
+    •	Class (Static) Variables: Declared with static; shared across all instances of the class.
+
+- Example:
+
+public class Example {
+int instanceVar = 5; // Instance variable
+static int staticVar = 10; // Class (static) variable
+
+    public void method() {
+        int localVar = 15; // Local variable
+        System.out.println(localVar + instanceVar + staticVar);
+    }
+
+}
+
+2. **Data Types in Java**
+
+Java has two main categories of data types:
+
+- Primitive Data Types
+
+Simple data types that store basic values:
+
+    •	int: Integer values (e.g., 25)
+    •	double: Decimal values (e.g., 3.14)
+    •	char: Single character (e.g., 'A')
+    •	boolean: Logical values (true/false)
+
+- Reference Data Types
+
+Reference types store addresses of complex objects and include String, arrays, and custom classes.
+
+- Example of Primitive Types:
+
+int age = 25;
+double price = 19.99;
+char grade = 'A';
+boolean isStudent = true;
+
+3. **Operators in Java**
+
+Operators are symbols that perform operations on values and variables.
+
+    •	Arithmetic Operators: +, -, *, /, %
+    •	Example: int sum = 5 + 3; // sum = 8
+    •	Relational Operators: ==, !=, >, <, >=, <=
+    •	Example: 5 > 3 // true
+    •	Logical Operators: &&, ||, !
+    •	Example: (5 > 3) && (3 < 4) // true
