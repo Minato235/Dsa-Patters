@@ -97,3 +97,71 @@ Operators are symbols that perform operations on values and variables.
     •	Example: 5 > 3 // true
     •	Logical Operators: &&, ||, !
     •	Example: (5 > 3) && (3 < 4) // true
+
+**Day 3: Java Control Flow Statements(3)**
+
+1. If-Else Statements
+
+   • Purpose: Execute code based on conditions
+
+int score = 85;
+if (score >= 90) {
+System.out.println("Grade A");
+} else if (score >= 80) {
+System.out.println("Grade B");
+} else {
+System.out.println("Grade C");
+}
+
+2. Switch Statements
+
+   • Purpose: Simplify multiple exact matches.
+
+   • Example:
+
+int day = 3;
+switch (day) {
+case 1:
+System.out.println("Monday");
+break;
+case 3:
+System.out.println("Wednesday");
+break;
+default:
+System.out.println("Other day");
+}
+
+3. Loops
+
+Loops help repeat actions based on conditions.
+
+For Loop
+
+    •	Structure: for (initialization; condition; update)
+    •	Example:
+
+for (int i = 0; i < 5; i++) {
+System.out.println("Count: " + i);
+}
+
+While Loop
+
+    •	Structure: while (condition)
+    •	Example:
+
+int i = 0;
+while (i < 5) {
+System.out.println("Count: " + i);
+i++;
+}
+
+Do-While Loop
+
+    •	Structure: do { ... } while (condition);
+    •	Example:
+
+int i = 0;
+do {
+System.out.println("Count: " + i);
+i++;
+} while (i < 5);
